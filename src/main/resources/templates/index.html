@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/report.css">
+</head>
+<body>
+<div class="container">
+    <h1>Для перехода на страницу загрузки отчетов нажмите на кнопку</h1>
+    <button th:onclick="|window.location.href='@{/report}'|">Перейти к отчётам</button>
+    <div class="footer">
+        &copy; Reksoft.com 2025
+    </div>
+</div>
+</body>
+</html>
