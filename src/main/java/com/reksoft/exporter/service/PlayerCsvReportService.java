@@ -23,7 +23,7 @@ public class PlayerCsvReportService {
 
         File file = new File(filePath);
         try (CSVWriter writer = new CSVWriter(new FileWriter(file))) {
-            String[] header = {"ID", "Combined Name", "Nickname", "Country", "Team Name"};
+            String[] header = {"ID", "Combined Name", "Nickname", "Country", "Team Name", "Full Name"};
             writer.writeNext(header);
 
             for (Player player : players) {
@@ -32,7 +32,8 @@ public class PlayerCsvReportService {
                         player.getFullName(),
                         player.getNickname(),
                         player.getCountry() != null ? String.valueOf(player.getCountry()) : "",
-                        player.getTeamName()
+                        player.getTeamName(),
+                        player.getFullNameWithNickName()
                 };
                 writer.writeNext(line);
             }

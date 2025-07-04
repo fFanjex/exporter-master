@@ -9,4 +9,5 @@ public class Player {
     private String nickname;
     private Integer country;
     private String teamName;
+    private String fullNameWithNickName;
 }
