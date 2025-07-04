@@ -1,6 +1,7 @@
-package com.reksoft.exporter.repository;
+package com.reksoft.exporter.repository.repositoryImpl;
 
 import com.reksoft.exporter.properties.ApiProperties;
+import com.reksoft.exporter.repository.PlayerRepository;
 import com.reksoft.exporter.repository.dto.PlayerViewDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.ParameterizedTypeReference;

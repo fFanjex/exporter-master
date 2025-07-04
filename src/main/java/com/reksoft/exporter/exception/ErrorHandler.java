@@ -1,4 +1,4 @@
-package com.reksoft.exporter.controller;
+package com.reksoft.exporter.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

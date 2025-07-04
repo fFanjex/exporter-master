@@ -1,9 +1,8 @@
-package com.reksoft.exporter.service;
+package com.reksoft.exporter.service.serviceImpl;
 
 import com.opencsv.CSVWriter;
 import com.reksoft.exporter.model.Player;
-import com.reksoft.exporter.repository.PlayerApiRepository;
-import com.reksoft.exporter.repository.dto.PlayerViewDto;
+import com.reksoft.exporter.service.PlayerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
