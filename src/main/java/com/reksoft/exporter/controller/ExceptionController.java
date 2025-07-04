@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ExceptionController implements ErrorController {
 
-    @RequestMapping(value = {"/{path:^(?!report$).*$}", "/{path:^(?!report$).*$}/**"})
+    @RequestMapping(value = {
+            "/{path:^(?!report$|css$|js$|images$).*$}",
+            "/{path:^(?!report$|css$|js$|images$).*$}/**"
+    })
     public String redirect() {
         return "index";
     }
