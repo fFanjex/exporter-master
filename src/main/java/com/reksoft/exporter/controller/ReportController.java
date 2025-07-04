@@ -25,13 +25,11 @@ public class ReportController {
         return "report";
     }
 
-    @SneakyThrows
     @GetMapping("/player/download")
     public ResponseEntity<Resource> downloadPlayerReport() throws IOException {
         return csvReportCreator.buildCsvDownloadResponse("player_report", csvReportService::generatePlayerReport);
     }
 
-    @SneakyThrows
     @GetMapping("/team/download")
     public ResponseEntity<Resource> downloadTeamReport() throws IOException {
         return csvReportCreator.buildCsvDownloadResponse("team_report", csvReportService::generateTeamReport);
