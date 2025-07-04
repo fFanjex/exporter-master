@@ -3,7 +3,6 @@ package com.reksoft.exporter.controller;
 import com.reksoft.exporter.properties.CsvReportCreator;
 import com.reksoft.exporter.service.serviceImpl.CsvReportService;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
