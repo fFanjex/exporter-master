@@ -23,7 +23,7 @@ public class PlayerCsvReportService {
 
         File file = new File(filePath);
         try (CSVWriter writer = new CSVWriter(new FileWriter(file))) {
-            String[] header = {"ID", "Combined Name", "Nickname", "Team Name", "Country"};
+            String[] header = {"ID", "Combined Name", "Nickname", "Country", "Team Name"};
             writer.writeNext(header);
 
             for (Player player : players) {
